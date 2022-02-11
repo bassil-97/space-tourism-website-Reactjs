@@ -1,0 +1,168 @@
+.destination {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../assets/destination/background-destination-desktop.jpg') top no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.destination__content {
+    width: 100%;
+    padding: 1.5rem 6rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.section__title::before {
+    content:"01 ";
+    color: lightgray;
+    margin-right: 10px;
+    opacity: .5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.section__title {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.planets__info {
+    margin-top: 50px;
+}
+
+.planets__info > .row > .col-lg-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.planets__info > .row > .col-lg-6:last-child {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.planets__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planets__list > span {
+    padding: 10px;
+    margin: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    transition: .8s;
+    border-radius: 2px;
+}
+
+.planets__list > span:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition-duration: .8s;
+}
+
+.destination__info {
+    margin-top: 30px;
+    padding: 0px 4rem;
+}
+
+.destination__info > h3 {
+    width: 100%;
+    font-size: 5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 6px;
+}
+
+.destination__info > p {
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 25px;
+}
+
+hr {
+    width: 75%;
+    opacity: .5;
+    background-color: rgba(211, 211, 211, 0.637);
+}
+
+.destination__info > p, .planets__list > span {
+    opacity: .7;
+    color: lightgray;
+}
+
+.measuers__content {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.measuers__content > .measure {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.measuers__content > .measure > small {
+    font-size: .6em;
+    color: rgba(211, 211, 211, 0.651);
+    letter-spacing: 2px;
+}
+
+.measuers__content > .measure > h6 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4em;
+}
+
+@media screen and (max-width: 992px) {
+    .planets__info > .row > .col-lg-6:last-child {
+        margin-top: 40px;
+    }
+
+    .section__title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    hr { width: 100%; }
+
+    .measuers__content {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .destination {
+        background: url('../../assets/destination/background-destination-tablet.jpg') center no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .destination {
+        background: url('../../assets/destination/background-destination-mobile.jpg') center no-repeat;
+        background-size: cover;
+    }
+}

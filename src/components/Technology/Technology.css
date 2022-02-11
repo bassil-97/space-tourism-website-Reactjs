@@ -1,0 +1,48 @@
+.technology {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: url('../../assets/technology/background-technology-desktop.jpg') fixed center no-repeat;
+    background-size: 100% 100%;
+}
+
+.technology__content {
+    width: 100%;
+    padding: 1.5rem 6rem;
+    padding-right: 0px;
+    margin-top: 60px;
+    color: white;
+}
+
+.section__title::before {
+    content:"03 ";
+    color: lightgray;
+    margin-right: 10px;
+    opacity: .5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.section__title {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .technology__content {
+        padding: 1.5rem 2rem;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .technology__content {
+        padding: 1.5rem 0px;
+        
+    }
+}

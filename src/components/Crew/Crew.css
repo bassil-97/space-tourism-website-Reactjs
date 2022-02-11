@@ -1,0 +1,81 @@
+.crew__container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: url('../../assets/crew/background-crew-desktop.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.crew__content {
+    width: 100%;
+    padding: 1.5rem 6rem;
+    padding-bottom: 0px;
+    margin-top: 60px;
+    color: white;
+}
+
+.crew__members {
+    margin-top: 80px;
+}
+
+.section__title::before {
+    content:"02 ";
+    color: lightgray;
+    margin-right: 10px;
+    opacity: .5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.section__title {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.crew__job {
+    text-transform: uppercase;
+    color: rgba(211, 211, 211, 0.521);
+    font-family: 'Cinzel', serif;
+}
+
+.crew__member__name {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
+
+.crew__member__description {
+    width: 75%;
+    margin-top: 20px;
+    opacity: .6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    text-align: justify;
+}
+
+.crew__members > .row > .col-lg-6:first-child {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+    .crew__members > .row > .col-lg-6, .crew__member__description {
+        display: flex;
+        align-items: center !important;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .crew__content {
+        padding: 1.5rem 3rem;
+        padding-bottom: 0px;
+    }
+}

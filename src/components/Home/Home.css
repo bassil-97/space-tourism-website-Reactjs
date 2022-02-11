@@ -1,0 +1,94 @@
+
+.home__container {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../assets/home/background-home-desktop.jpg') top no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home__content {
+    width: 100%;
+    padding: 2rem 5rem;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.home__content > .row > .col-lg-6 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.home__content > .row > .col-lg-6 > h6 {
+    letter-spacing: 2px;
+    font-weight: lighter;
+    color: lightgray;
+}
+
+.home__content > .row > .col-lg-6 > h1 {
+    font-size: 8em;
+    font-weight: lighter;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+.home__content > .row > .col-lg-6 > P {
+    margin-top: 10px;
+    width: 65%;
+    text-align: justify;
+    font-size: .8em;
+    line-height: 20px;
+    color: lightgray;
+    font-family: 'Raleway', sans-serif;
+}
+
+.home__content > .row > .col-lg-6:last-child {
+    align-items: center;
+}
+
+.explore-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    background: linear-gradient(to left, white 50%, lightblue 50%) right;
+    background-size: 250%;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    transition: .8s ease-out;
+}
+
+.explore-btn:hover {
+    background-position: left;
+}
+
+@media screen and (max-width: 992px) {
+
+    .home__container {
+        background: url('../../assets/home/background-home-tablet.jpg') center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .home__content > .row > .col-lg-6 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .home__content > .row > .col-lg-6 > P {
+        text-align: center;
+        width: 100%;
+    }
+}
